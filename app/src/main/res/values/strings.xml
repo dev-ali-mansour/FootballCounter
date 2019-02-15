@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Court Counter</string>
+    <string name="action_settings">Settings</string>
+    <string name="ahly">Ahly</string>
+    <string name="zamalek">Zamalek</string>
+    <string name="score_0">0</string>
+    <string name="goal">Goal</string>
+</resources>

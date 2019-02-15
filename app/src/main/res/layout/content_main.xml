@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout style="@style/verticalLinearLayoutStyle">
+
+        <TextView
+            style="@style/textViewTeamStyle"
+            android:layout_marginEnd="20dp"
+            android:text="@string/ahly"
+            android:textColor="@color/colorRed" />
+
+        <TextView
+            android:id="@+id/ahly_score_text_view"
+            style="@style/textViewScoreStyle" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:onClick="addGoalForAhly"
+            android:text="@string/goal" />
+
+    </LinearLayout>
+
+    <View style="@style/dividerStyle" />
+
+    <LinearLayout style="@style/verticalLinearLayoutStyle">
+
+        <TextView
+            style="@style/textViewTeamStyle"
+            android:layout_marginStart="20dp"
+            android:text="@string/zamalek"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/zamalek_score_text_view"
+            style="@style/textViewScoreStyle" />
+
+
+        <Button
+            style="@style/buttonStyle"
+            android:onClick="addGoalForZamalek"
+            android:text="@string/goal" />
+
+    </LinearLayout>
+
+</LinearLayout>
